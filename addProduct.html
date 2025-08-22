@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8" />
+  <title>إضافة منتج جديد</title>
+</head>
+<body>
+  <h2>إضافة منتج جديد</h2>
+  <form id="productForm">
+    <label>اسم المنتج:</label><br>
+    <input type="text" id="name" /><br><br>
+
+    <label>السعر:</label><br>
+    <input type="number" id="price" /><br><br>
+
+    <label>التصنيف:</label><br>
+    <input type="text" id="category" /><br><br>
+
+    <label>رابط الصورة:</label><br>
+    <input type="text" id="image" /><br><br>
+
+    <button type="submit">إضافة</button>
+  </form>
+
+  <script>
+    document.getElementById("productForm").addEventListener("submit", async (e) => {
+      e.preventDefault();
+      const product = {
+        name: document.getElementById("name").value,
+        price: document.getElementById("price").value,
+        category: document.getElementById("category").value,
+        image: document.getElementById("image").value
+      };
+
+      const res = await fetch("/products", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(product)
+      });
+
+      const data = await res.json();
+      alert("✅ المنتج اتضاف: " + data.name);
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+[
+  {
+    "id": 1755886532114,
+    "name": "adamyt",
+    "email": "adamfamilyadam3000@gmail.com",
+    "password": "adam3000",
+    "createdAt": "2025-08-22T18:15:32.114Z",
+    "sessionToken": "1755893308580spgk9irnvyd",
+    "lastLogin": "2025-08-22T20:08:28.580Z",
+    "isActive": true,
+    "loginCount": 2,
+    "ipAddress": "::ffff:172.31.119.130"
+  }
+]

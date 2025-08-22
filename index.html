@@ -1,0 +1,98 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mansouj Store - Modern Fashion & Lifestyle</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <header>
+    <div class="logo">Mansouj</div>
+    <nav>
+      <a href="shop.html">Shop</a>
+    </nav>
+    <div class="header-actions">
+      <div class="auth-links" id="auth-links">
+        <a href="login.html" class="login-btn">
+          <span>👥</span>
+          Login
+        </a>
+        <a href="signup.html">Sign Up</a>
+      </div>
+      <div id="cart-icon">
+        <svg class="cart-svg" viewBox="0 0 24 24">
+          <path d="M7 18c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12L8.1 13h7.45c.75 0 1.41-.41 1.75-1.03L21.7 4H5.21l-.94-2H1zm16 16c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"/>
+        </svg>
+        (<span id="cart-count">0</span>)
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Welcome to Mansouj</h1>
+        <p>Discover the latest trends in fashion and lifestyle. Quality products, unbeatable prices.</p>
+        <a href="shop.html" class="cta-button">Shop Now</a>
+      </div>
+      <div class="hero-image">
+        <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=600&h=400&fit=crop" alt="Fashion Store">
+      </div>
+    </section>
+
+    
+
+    <!-- Featured Products -->
+    <section class="featured-products">
+      <h2>Featured Products</h2>
+      <div id="featured-products-grid" class="products-grid"></div>
+      <div class="view-all">
+        <a href="shop.html" class="secondary-button">View All Products</a>
+      </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+      <div class="newsletter-content">
+        <h2>Stay Updated</h2>
+        <p>Get the latest updates on new products and exclusive offers.</p>
+        <form class="newsletter-form">
+          <input type="email" placeholder="Enter your email" required>
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>Mansouj</h3>
+        <p>Your go-to destination for modern fashion and lifestyle products.</p>
+      </div>
+      <div class="footer-section">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="shop.html">Shop</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Customer Service</h4>
+        <ul>
+          <li><a href="#">Support</a></li>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Returns</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 Mansouj Store. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>

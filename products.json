@@ -1,0 +1,14 @@
+[
+  {
+    "name": "Black T-Shirt",
+    "price": 20,
+    "image": "https://via.placeholder.com/150?text=Black+T-Shirt",
+    "description": "Soft cotton black t-shirt"
+  },
+  {
+    "name": "Blue Jeans",
+    "price": 40,
+    "image": "https://via.placeholder.com/150?text=Blue+Jeans",
+    "description": "Comfortable blue jeans"
+  }
+]

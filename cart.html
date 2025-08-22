@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sotra | Cart</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <header>
+    <div class="logo">Sotra</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="shop.html">Shop</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div id="cart-icon">🛒 (<span id="cart-count">0</span>)</div>
+  </header>
+
+  <main>
+    <h2>Your Cart</h2>
+    <div id="cart-items"></div>
+    <h3 id="cart-total"></h3>
+
+    <h2>Checkout</h2>
+    <form action="https://formspree.io/f/mnqeakvb" method="POST" id="checkout-form">
+      <input type="text" name="name" placeholder="Name" required>
+      <input type="email" name="email" placeholder="Email" required>
+      <input type="tel" name="phone" placeholder="Phone" required>
+      <textarea name="address" placeholder="Address" required></textarea>
+      <button type="submit">Submit Order</button>
+    </form>
+  </main>
+</body>
+</html>
